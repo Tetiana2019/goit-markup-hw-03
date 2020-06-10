@@ -16,6 +16,8 @@
   --footer-text-color: #fff;
   --primary-button-color: #f5f4fa;
   --text-button-color: #fff;
+  --secondary-bg-color:#F5F4FA;
+  --line-color: #ECECEC;
 }
 body {
   background-color: var(--primary-bg-color);
