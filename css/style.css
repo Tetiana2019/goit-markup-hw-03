@@ -23,6 +23,23 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 } */
+.header-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.header-list {
+  margin-left: 90px;
+}
+.header-list,
+.header-contacts {
+  display: flex;
+  list-style: none;
+}
+.header-contacts {
+  margin-left: auto;
+}
 .company-logo a {
   text-decoration: none;
   color: #000;
@@ -41,6 +58,13 @@ body {
   font-family: "Roboto";
   font-weight: 500;
   text-decoration: none;
+  list-style: none;
+}
+.list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts-item + .contacts-item {
+  margin-left: 40px;
 }
 .header-list .header-link:hover,
 .header-list .header-link:focus {
@@ -61,18 +85,32 @@ body {
 .header-contacts .contacts-link:focus {
   color: var(--accent-color);
 }
-/* Поменять на картинку */
 .order {
-  background-color: #3d3d3d;
+  background: url(../images/header/header-bg.svg) no-repeat center/cover;
+  background-color: rgba(47, 48, 58, 0.8);
+  background-blend-mode: darken;
+  padding: 210px 0 200px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
 }
-.order-title h1 {
+.order-items {
+  width: 100%;
+  max-width: 615px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.order-title {
   font-size: 44px;
   letter-spacing: 3px;
-  line-height: 3.75;
+  line-height: 1.75;
   color: #fff;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 45px;
 }
 .order-btn {
   max-width: 200px;
@@ -88,6 +126,7 @@ body {
   line-height: 1.9;
   font-weight: 700;
   text-align: center;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,7 +222,7 @@ footer {
   background-color: var(--accent-color);
   color: var(--hover-text-color);
 }
-.portfolio-filters .current{
+.portfolio-filters .current {
   background-color: var(--accent-color);
   color: var(--hover-text-color);
 }

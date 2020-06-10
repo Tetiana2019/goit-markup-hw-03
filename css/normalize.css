@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 :root {
   --primary-text-color: #757575;
@@ -22,4 +21,11 @@ body {
   background-color: var(--primary-bg-color);
   font-family: "Roboto", sans-serif;
   color: #212121;
+}
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
