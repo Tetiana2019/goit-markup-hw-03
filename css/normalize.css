@@ -18,6 +18,13 @@
   --text-button-color: #fff;
   --secondary-bg-color:#F5F4FA;
   --line-color: #ECECEC;
+  --primary-border-color: #afb1b8;
+  --footer-bg-color: #2f303a;
+  --footer-line-color:rgba(255, 255, 255, 0.1);
+  --card-border-color:#eeeeee;
+  
+  
+
 }
 body {
   background-color: var(--primary-bg-color);
@@ -30,4 +37,14 @@ body {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+.section-title {
+  font-size: 36px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+}
+section {
+  padding: 94px 0;
 }
